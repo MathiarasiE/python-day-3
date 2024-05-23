@@ -1,0 +1,35 @@
+
+arr = []
+
+
+n = int(input("Enter the size of the array : "))
+
+
+if n < 2 or n > 100000:
+    print("Invalid array size")
+    exit()
+
+
+for i in range(n):
+   
+    arr.append(int(input("Enter element " + str(i) + " : ")))
+
+
+for i in range(n):
+    if arr[i] < 1 or arr[i] > n-1:
+        print("Invalid array elements")
+        exit()
+
+
+rep = -1
+
+
+for i in range(n):
+    
+    if arr[i] == arr[i+1]:
+        
+        rep = arr[i]
+        break
+
+
+print("The repetitive element is : ", rep)
