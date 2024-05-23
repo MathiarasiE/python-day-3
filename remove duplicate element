@@ -1,0 +1,25 @@
+
+arr = []
+
+
+n = int(input("Enter the size of the array : "))
+
+
+for i in range(n):
+   
+    arr.append(int(input("Enter element " + str(i) + " : ")))
+
+
+unique = []
+
+
+for i in range(n):
+  
+    if arr[i] not in unique:
+       
+        unique.append(arr[i])
+
+
+print("The unique elements found in the array are : ", end="")
+for i in range(len(unique)):
+    print(unique[i], end=" ")
