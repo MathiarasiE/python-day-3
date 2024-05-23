@@ -1,0 +1,19 @@
+print("Today is Thursday, May 23, 2024 and here are the results:")
+
+
+array1 = [1, 2, 3, 4, 5]
+array2 = [1, 2, 3, 4, 5]
+
+
+if len(array1) != len(array2):
+    print("The arrays are not the same.")
+else:
+    same = True
+    for i in range(len(array1)):
+        if array1[i] != array2[i]:
+            same = False
+            break
+    if same:
+        print("The arrays are the same.")
+    else:
+        print("The arrays are not the same.")
