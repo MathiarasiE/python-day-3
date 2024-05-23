@@ -1,0 +1,22 @@
+arr = []
+
+n = int(input("Enter the size of the array : "))
+
+
+for i in range(n):
+
+    arr.append(int(input("Enter element " + str(i) + " : ")))
+
+
+mean = sum(arr) / n
+
+
+variance = sum((x - mean) ** 2 for x in arr) / n
+
+
+deviation = variance ** 0.5
+
+
+print("The mean is : ", mean)
+print("The variance is : ", variance)
+print("The deviation is : ", deviation)
