@@ -1,0 +1,16 @@
+print("Today is Thursday, May 23, 2024 and here are the results:")
+
+
+arr = [5, 4, 6, 2, 1, 5]
+n = len(arr)
+
+
+sum_arr = sum(arr)
+
+
+sum_num = (n-1)*(n-1+1)//2
+
+
+repetitive_element = sum_arr - sum_num
+
+print("The repetitive element is:", repetitive_element)
