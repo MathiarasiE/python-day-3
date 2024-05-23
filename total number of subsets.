@@ -1,0 +1,7 @@
+arr = [1, 2, 3]
+n = len(arr)
+
+ 
+total_subsets = 2**n
+
+print("The total number of subsets is:", total_subsets)
