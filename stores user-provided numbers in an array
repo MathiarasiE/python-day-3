@@ -1,0 +1,45 @@
+arr = []
+
+
+n = int(input("Enter the size of the array : "))
+
+
+for i in range(n):
+    
+    arr.append(int(input("Enter element " + str(i) + " : ")))
+
+
+print("The elements in the array are : ", end="")
+for i in range(n):
+    print(arr[i], end=" ")
+
+
+number_to_insert = int(input("\nEnter the number to insert : "))
+location_to_insert = int(input("Enter the location to insert the number : "))
+
+
+if location_to_insert >= 0 and location_to_insert <= n:
+  
+    arr.insert(location_to_insert, number_to_insert)
+  
+    n += 1
+else:
+ 
+    print("Invalid location to insert the number")
+
+
+location_to_delete = int(input("\nEnter the location to delete the number : "))
+
+if location_to_delete >= 0 and location_to_delete < n:
+  
+    arr.pop(location_to_delete)
+   
+    n -= 1
+else:
+ 
+    print("Invalid location to delete the number")
+
+
+print("The modified array is : ", end="")
+for i in range(n):
+    print(arr[i], end=" ")
